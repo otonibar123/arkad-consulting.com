@@ -54,9 +54,25 @@ window.addEventListener('scroll', function () {
 /* --- Formulaire de contact (simulation) --- */
 var contactForm = document.querySelector('.form');
 
-contactForm.addEventListener('submit', function (e) {
-  e.preventDefault();
-  var btn = contactForm.querySelector('.form__submit .btn');
-  btn.textContent = '\u2713 Message envoyé';
-  btn.classList.add('btn--sent');
+if (contactForm) {
+  contactForm.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var btn = contactForm.querySelector('.form__submit .btn');
+    btn.textContent = '\u2713 Message envoyé';
+    btn.classList.add('btn--sent');
+  });
+}
+
+/* --- FAQ accordion --- */
+document.querySelectorAll('.faq__question').forEach(function (btn) {
+  btn.addEventListener('click', function () {
+    var item = btn.parentElement;
+    var isOpen = item.classList.contains('faq__item--open');
+    document.querySelectorAll('.faq__item--open').forEach(function (el) {
+      el.classList.remove('faq__item--open');
+    });
+    if (!isOpen) {
+      item.classList.add('faq__item--open');
+    }
+  });
 });
