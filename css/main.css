@@ -928,7 +928,7 @@ body {
 }
 
 .offers__price {
-  font-family: 'Michroma', sans-serif;
+  font-family: 'Michroma', Arial, sans-serif;
   font-size: 1.3rem;
   color: var(--or);
   margin-bottom: 0.25rem;
@@ -1034,7 +1034,7 @@ body {
 }
 
 .service-content .pricing-highlight {
-  font-family: 'Michroma', sans-serif;
+  font-family: 'Michroma', Arial, sans-serif;
   font-size: 1.5rem;
   color: var(--or);
   margin-bottom: 0.5rem;
