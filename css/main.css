@@ -934,6 +934,10 @@ body {
   margin-bottom: 0.25rem;
 }
 
+.euro {
+  font-family: 'Roboto', Arial, sans-serif;
+}
+
 .offers__duration {
   font-size: 0.78rem;
   color: var(--creme-35);
