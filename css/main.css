@@ -94,6 +94,12 @@ body {
   box-shadow: 0 8px 30px rgba(255, 206, 92, 0.2);
 }
 
+.btn--lg {
+  padding: 1rem 2.5rem;
+  font-size: 1.05rem;
+  letter-spacing: 0.03em;
+}
+
 .btn--ghost {
   background: transparent;
   color: var(--creme);
